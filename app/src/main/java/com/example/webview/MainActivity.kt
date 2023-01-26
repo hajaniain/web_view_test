@@ -11,22 +11,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Find the WebView element in the layout
-        // Find the WebView element in the layout
         val webView = findViewById<WebView>(R.id.w_view)
-
-        // Enable JavaScript
 
         // Enable JavaScript
         webView.settings.javaScriptEnabled = true
 
         // Set a WebViewClient to handle page navigation
-
-        // Set a WebViewClient to handle page navigation
         webView.webViewClient = WebViewClient()
 
+        // Clear cache
         webView.clearCache(true)
-
-        // Load the desired URL
 
         // Load the desired URL
         webView.loadUrl("https://google.com")
